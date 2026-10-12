@@ -1,0 +1,22 @@
+generated: '2026-10-12'
+method: derived
+generator: derive-data-model.py
+source:
+- openapi/_ae-authored/upstage-ai-systemone-openapi-generated.yml
+notation: has_one = property $ref; has_many = array of $ref; belongs_to = <entity>_id field
+summary:
+  entities: 5
+  entities_in_spec: 5
+  relationships: 0
+entities:
+- name: Answer
+  fields: 7
+- name: Error
+  fields: 1
+- name: Question
+  fields: 3
+- name: SystemOneRequest
+  fields: 3
+- name: SystemOneResponse
+  fields: 3
+relationships: []

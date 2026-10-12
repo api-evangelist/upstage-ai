@@ -1,0 +1,17 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://pypi.org/project/mcp-upstage/
+- https://pypi.org/project/langchain-upstage/
+packages:
+- name: mcp-upstage
+  registry: pypi
+  url: https://pypi.org/project/mcp-upstage/
+  language: python
+  official: true
+- name: langchain-upstage
+  registry: pypi
+  url: https://pypi.org/project/langchain-upstage/
+  language: python
+  official: false
+  note: LangChain partner integration hosted in the langchain-ai GitHub org

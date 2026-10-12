@@ -1,0 +1,13 @@
+generated: '2026-10-12'
+method: derived
+source: openapi/_ae-authored/upstage-ai-systemone-openapi-generated.yml
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  credential: Upstage Console API key
+summary: 'API key issued in Upstage Console sent as Authorization: Bearer <UPSTAGE_API_KEY>.
+  No OAuth scopes.'
+docs: https://console.upstage.ai/api/systemone

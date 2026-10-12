@@ -1,0 +1,20 @@
+generated: '2026-10-12'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/_ae-authored/upstage-ai-systemone-openapi-generated.yml
+format: custom
+envelope:
+  media_type: application/json
+  schema: Error
+coverage:
+  operations: 1
+  statuses_declared: 1
+problems:
+- status: 422
+  title: Unprocessable Content
+  description: Validation failed (e.g. a choice question with more than 26 options)
+  operations: 1
+  media_types:
+  - application/json
+  schema: Error

@@ -1,0 +1,1211 @@
+generated: '2026-10-12'
+method: searched
+name: Upstage API rate limits
+source: https://console.upstage.ai/docs/guides/rate-limits
+sources:
+- https://console.upstage.ai/docs/guides/rate-limits.md
+published: true
+note: Transcribed from the provider rate-limit guide (current commitment tiers only; legacy tiers omitted). Exceeding a limit
+  returns 429 Too Many Requests; the guide also documents rate-limit response headers (limit, remaining, reset, interval).
+limit_count: 150
+limits:
+- name: Solar Pro 4 Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 0 TPM
+  limit_text: 250,000 TPM (Tokens per minute)
+  limit: 250000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 1 (Explore) RPM
+  limit_text: 400 RPM (Requests per minute)
+  limit: 400
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 1 (Explore) TPM
+  limit_text: 500,000 TPM (Tokens per minute)
+  limit: 500000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 2 (Build) RPM
+  limit_text: 2,000 RPM (Requests per minute)
+  limit: 2000
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 2 (Build) TPM
+  limit_text: 750,000 TPM (Tokens per minute)
+  limit: 750000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 3 (Scale) RPM
+  limit_text: 4,000 RPM (Requests per minute)
+  limit: 4000
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 3 (Scale) TPM
+  limit_text: 1,500,000 TPM (Tokens per minute)
+  limit: 1500000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 4 (Enterprise) RPM
+  limit_text: 8,000 RPM (Requests per minute)
+  limit: 8000
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 4 Tier 4 (Enterprise) TPM
+  limit_text: 3,000,000 TPM (Tokens per minute)
+  limit: 3000000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Pro 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 0 TPM
+  limit_text: 50,000 TPM (Tokens per minute)
+  limit: 50000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 1 (Explore) RPM
+  limit_text: 400 RPM (Requests per minute)
+  limit: 400
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 1 (Explore) TPM
+  limit_text: 150,000 TPM (Tokens per minute)
+  limit: 150000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 2 (Build) RPM
+  limit_text: 2,000 RPM (Requests per minute)
+  limit: 2000
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 2 (Build) TPM
+  limit_text: 750,000 TPM (Tokens per minute)
+  limit: 750000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 3 (Scale) RPM
+  limit_text: 4,000 RPM (Requests per minute)
+  limit: 4000
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 3 (Scale) TPM
+  limit_text: 1,500,000 TPM (Tokens per minute)
+  limit: 1500000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 4 (Enterprise) RPM
+  limit_text: 8,000 RPM (Requests per minute)
+  limit: 8000
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini 4 Tier 4 (Enterprise) TPM
+  limit_text: 3,000,000 TPM (Tokens per minute)
+  limit: 3000000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Mini 4
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 0 TPM
+  limit_text: 250,000 TPM (Tokens per minute)
+  limit: 250000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 1 (Explore) RPM
+  limit_text: 400 RPM (Requests per minute)
+  limit: 400
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 1 (Explore) TPM
+  limit_text: 500,000 TPM (Tokens per minute)
+  limit: 500000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 2 (Build) RPM
+  limit_text: 2,000 RPM (Requests per minute)
+  limit: 2000
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 2 (Build) TPM
+  limit_text: 750,000 TPM (Tokens per minute)
+  limit: 750000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 3 (Scale) RPM
+  limit_text: 4,000 RPM (Requests per minute)
+  limit: 4000
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 3 (Scale) TPM
+  limit_text: 1,500,000 TPM (Tokens per minute)
+  limit: 1500000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 4 (Enterprise) RPM
+  limit_text: 8,000 RPM (Requests per minute)
+  limit: 8000
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 3 Tier 4 (Enterprise) TPM
+  limit_text: 3,000,000 TPM (Tokens per minute)
+  limit: 3000000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Pro 3
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 0 TPM
+  limit_text: 250,000 TPM (Tokens per minute)
+  limit: 250000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 1 (Explore) RPM
+  limit_text: 400 RPM (Requests per minute)
+  limit: 400
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 1 (Explore) TPM
+  limit_text: 500,000 TPM (Tokens per minute)
+  limit: 500000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 2 (Build) RPM
+  limit_text: 2,000 RPM (Requests per minute)
+  limit: 2000
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 2 (Build) TPM
+  limit_text: 750,000 TPM (Tokens per minute)
+  limit: 750000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 3 (Scale) RPM
+  limit_text: 4,000 RPM (Requests per minute)
+  limit: 4000
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 3 (Scale) TPM
+  limit_text: 1,500,000 TPM (Tokens per minute)
+  limit: 1500000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 4 (Enterprise) RPM
+  limit_text: 8,000 RPM (Requests per minute)
+  limit: 8000
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Pro 2 Tier 4 (Enterprise) TPM
+  limit_text: 3,000,000 TPM (Tokens per minute)
+  limit: 3000000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Pro 2
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 0 TPM
+  limit_text: 50,000 TPM (Tokens per minute)
+  limit: 50000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 1 (Explore) RPM
+  limit_text: 800 RPM (Requests per minute)
+  limit: 800
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 1 (Explore) TPM
+  limit_text: 300,000 TPM (Tokens per minute)
+  limit: 300000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 2 (Build) RPM
+  limit_text: 4,000 RPM (Requests per minute)
+  limit: 4000
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 2 (Build) TPM
+  limit_text: 1,500,000 TPM (Tokens per minute)
+  limit: 1500000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 3 (Scale) RPM
+  limit_text: 8,000 RPM (Requests per minute)
+  limit: 8000
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 3 (Scale) TPM
+  limit_text: 3,000,000 TPM (Tokens per minute)
+  limit: 3000000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 4 (Enterprise) RPM
+  limit_text: 15,000 RPM (Requests per minute)
+  limit: 15000
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Mini Tier 4 (Enterprise) TPM
+  limit_text: 6,000,000 TPM (Tokens per minute)
+  limit: 6000000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Mini
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 0 TPM
+  limit_text: 50,000 TPM (Tokens per minute)
+  limit: 50000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 1 (Explore) RPM
+  limit_text: 400 RPM (Requests per minute)
+  limit: 400
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 1 (Explore) TPM
+  limit_text: 150,000 TPM (Tokens per minute)
+  limit: 150000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 2 (Build) RPM
+  limit_text: 2,000 RPM (Requests per minute)
+  limit: 2000
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 2 (Build) TPM
+  limit_text: 750,000 TPM (Tokens per minute)
+  limit: 750000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 3 (Scale) RPM
+  limit_text: 4,000 RPM (Requests per minute)
+  limit: 4000
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 3 (Scale) TPM
+  limit_text: 1,500,000 TPM (Tokens per minute)
+  limit: 1500000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 4 (Enterprise) RPM
+  limit_text: 8,000 RPM (Requests per minute)
+  limit: 8000
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Syn Pro Tier 4 (Enterprise) TPM
+  limit_text: 3,000,000 TPM (Tokens per minute)
+  limit: 3000000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Syn Pro
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 0 TPM
+  limit_text: 50,000 TPM (Tokens per minute)
+  limit: 50000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 1 (Explore) RPM
+  limit_text: 300 RPM (Requests per minute)
+  limit: 300
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 1 (Explore) TPM
+  limit_text: 100,000 TPM (Tokens per minute)
+  limit: 100000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 2 (Build) RPM
+  limit_text: 1,200 RPM (Requests per minute)
+  limit: 1200
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 2 (Build) TPM
+  limit_text: 500,000 TPM (Tokens per minute)
+  limit: 500000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 3 (Scale) RPM
+  limit_text: 2,500 RPM (Requests per minute)
+  limit: 2500
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 3 (Scale) TPM
+  limit_text: 900,000 TPM (Tokens per minute)
+  limit: 900000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 4 (Enterprise) RPM
+  limit_text: 4,500 RPM (Requests per minute)
+  limit: 4500
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar DocVision Tier 4 (Enterprise) TPM
+  limit_text: 1,800,000 TPM (Tokens per minute)
+  limit: 1800000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Solar DocVision
+  capability: Generate (Chat / Reasoning / Structured outputs)
+- name: Solar Decide Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 0 TPM
+  limit_text: 50,000 TPM (Tokens per minute)
+  limit: 50000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 1 (Explore) RPM
+  limit_text: 400 RPM (Requests per minute)
+  limit: 400
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 1 (Explore) TPM
+  limit_text: 150,000 TPM (Tokens per minute)
+  limit: 150000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 2 (Build) RPM
+  limit_text: 2,000 RPM (Requests per minute)
+  limit: 2000
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 2 (Build) TPM
+  limit_text: 750,000 TPM (Tokens per minute)
+  limit: 750000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 3 (Scale) RPM
+  limit_text: 4,000 RPM (Requests per minute)
+  limit: 4000
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 3 (Scale) TPM
+  limit_text: 1,500,000 TPM (Tokens per minute)
+  limit: 1500000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 4 (Enterprise) RPM
+  limit_text: 8,000 RPM (Requests per minute)
+  limit: 8000
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Solar Decide Tier 4 (Enterprise) TPM
+  limit_text: 3,000,000 TPM (Tokens per minute)
+  limit: 3000000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Solar Decide
+  capability: Decide (Structured decisions)
+- name: Embeddings Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 0 TPM
+  limit_text: 300,000 TPM (Tokens per minute)
+  limit: 300000
+  window: minute
+  metric: TPM
+  tier: Tier 0
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 1 (Explore) RPM
+  limit_text: 2,000 RPM (Requests per minute)
+  limit: 2000
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 1 (Explore) TPM
+  limit_text: 700,000 TPM (Tokens per minute)
+  limit: 700000
+  window: minute
+  metric: TPM
+  tier: Tier 1 (Explore)
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 2 (Build) RPM
+  limit_text: 9,000 RPM (Requests per minute)
+  limit: 9000
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 2 (Build) TPM
+  limit_text: 3,500,000 TPM (Tokens per minute)
+  limit: 3500000
+  window: minute
+  metric: TPM
+  tier: Tier 2 (Build)
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 3 (Scale) RPM
+  limit_text: 18,000 RPM (Requests per minute)
+  limit: 18000
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 3 (Scale) TPM
+  limit_text: 7,000,000 TPM (Tokens per minute)
+  limit: 7000000
+  window: minute
+  metric: TPM
+  tier: Tier 3 (Scale)
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 4 (Enterprise) RPM
+  limit_text: 35,000 RPM (Requests per minute)
+  limit: 35000
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Embeddings
+  capability: Embed
+- name: Embeddings Tier 4 (Enterprise) TPM
+  limit_text: 14,000,000 TPM (Tokens per minute)
+  limit: 14000000
+  window: minute
+  metric: TPM
+  tier: Tier 4 (Enterprise)
+  product: Embeddings
+  capability: Embed
+- name: OCR Synchronous API Tier 0 RPS
+  limit_text: 3 RPS (Requests per second)
+  limit: 3
+  window: second
+  metric: RPS
+  tier: Tier 0
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 0 PPM
+  limit_text: 500 PPM (Pages per minute)
+  limit: 500
+  window: minute
+  metric: PPM
+  tier: Tier 0
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 1 (Explore) RPS
+  limit_text: 6 RPS (Requests per second)
+  limit: 6
+  window: second
+  metric: RPS
+  tier: Tier 1 (Explore)
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 1 (Explore) PPM
+  limit_text: 1,000 PPM (Pages per minute)
+  limit: 1000
+  window: minute
+  metric: PPM
+  tier: Tier 1 (Explore)
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 2 (Build) RPS
+  limit_text: 10 RPS (Requests per second)
+  limit: 10
+  window: second
+  metric: RPS
+  tier: Tier 2 (Build)
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 2 (Build) PPM
+  limit_text: 1,500 PPM (Pages per minute)
+  limit: 1500
+  window: minute
+  metric: PPM
+  tier: Tier 2 (Build)
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 3 (Scale) RPS
+  limit_text: 15 RPS (Requests per second)
+  limit: 15
+  window: second
+  metric: RPS
+  tier: Tier 3 (Scale)
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 3 (Scale) PPM
+  limit_text: 2,000 PPM (Pages per minute)
+  limit: 2000
+  window: minute
+  metric: PPM
+  tier: Tier 3 (Scale)
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 4 (Enterprise) RPS
+  limit_text: 20 RPS (Requests per second)
+  limit: 20
+  window: second
+  metric: RPS
+  tier: Tier 4 (Enterprise)
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: OCR Synchronous API Tier 4 (Enterprise) PPM
+  limit_text: 3,000 PPM (Pages per minute)
+  limit: 3000
+  window: minute
+  metric: PPM
+  tier: Tier 4 (Enterprise)
+  product: OCR
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 0 RPS
+  limit_text: 3 RPS (Requests per second)
+  limit: 3
+  window: second
+  metric: RPS
+  tier: Tier 0
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 0 PPM
+  limit_text: 500 PPM (Pages per minute)
+  limit: 500
+  window: minute
+  metric: PPM
+  tier: Tier 0
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 1 (Explore) RPS
+  limit_text: 6 RPS (Requests per second)
+  limit: 6
+  window: second
+  metric: RPS
+  tier: Tier 1 (Explore)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 1 (Explore) PPM
+  limit_text: 1,000 PPM (Pages per minute)
+  limit: 1000
+  window: minute
+  metric: PPM
+  tier: Tier 1 (Explore)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 2 (Build) RPS
+  limit_text: 10 RPS (Requests per second)
+  limit: 10
+  window: second
+  metric: RPS
+  tier: Tier 2 (Build)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 2 (Build) PPM
+  limit_text: 1,500 PPM (Pages per minute)
+  limit: 1500
+  window: minute
+  metric: PPM
+  tier: Tier 2 (Build)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 3 (Scale) RPS
+  limit_text: 15 RPS (Requests per second)
+  limit: 15
+  window: second
+  metric: RPS
+  tier: Tier 3 (Scale)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 3 (Scale) PPM
+  limit_text: 2,000 PPM (Pages per minute)
+  limit: 2000
+  window: minute
+  metric: PPM
+  tier: Tier 3 (Scale)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 4 (Enterprise) RPS
+  limit_text: 20 RPS (Requests per second)
+  limit: 20
+  window: second
+  metric: RPS
+  tier: Tier 4 (Enterprise)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Synchronous API Tier 4 (Enterprise) PPM
+  limit_text: 3,000 PPM (Pages per minute)
+  limit: 3000
+  window: minute
+  metric: PPM
+  tier: Tier 4 (Enterprise)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 0 RPS
+  limit_text: 6 RPS (Requests per second)
+  limit: 6
+  window: second
+  metric: RPS
+  tier: Tier 0
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 0 PPM
+  limit_text: 1,200 PPM (Pages per minute)
+  limit: 1200
+  window: minute
+  metric: PPM
+  tier: Tier 0
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 1 (Explore) RPS
+  limit_text: 12 RPS (Requests per second)
+  limit: 12
+  window: second
+  metric: RPS
+  tier: Tier 1 (Explore)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 1 (Explore) PPM
+  limit_text: 3,600 PPM (Pages per minute)
+  limit: 3600
+  window: minute
+  metric: PPM
+  tier: Tier 1 (Explore)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 2 (Build) RPS
+  limit_text: 20 RPS (Requests per second)
+  limit: 20
+  window: second
+  metric: RPS
+  tier: Tier 2 (Build)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 2 (Build) PPM
+  limit_text: 12,000 PPM (Pages per minute)
+  limit: 12000
+  window: minute
+  metric: PPM
+  tier: Tier 2 (Build)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 3 (Scale) RPS
+  limit_text: 30 RPS (Requests per second)
+  limit: 30
+  window: second
+  metric: RPS
+  tier: Tier 3 (Scale)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 3 (Scale) PPM
+  limit_text: 18,000 PPM (Pages per minute)
+  limit: 18000
+  window: minute
+  metric: PPM
+  tier: Tier 3 (Scale)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 4 (Enterprise) RPS
+  limit_text: 40 RPS (Requests per second)
+  limit: 40
+  window: second
+  metric: RPS
+  tier: Tier 4 (Enterprise)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Document Parse Asynchronous API Tier 4 (Enterprise) PPM
+  limit_text: 24,000 PPM (Pages per minute)
+  limit: 24000
+  window: minute
+  metric: PPM
+  tier: Tier 4 (Enterprise)
+  product: Document Parse
+  capability: Parse (Document parsing / Document OCR)
+- name: Information Extract Synchronous API Tier 0 RPS
+  limit_text: 1 RPS (Requests per second)
+  limit: 1
+  window: second
+  metric: RPS
+  tier: Tier 0
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 0 PPM
+  limit_text: 300 PPM (Pages per minute)
+  limit: 300
+  window: minute
+  metric: PPM
+  tier: Tier 0
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 1 (Explore) RPS
+  limit_text: 3 RPS (Requests per second)
+  limit: 3
+  window: second
+  metric: RPS
+  tier: Tier 1 (Explore)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 1 (Explore) PPM
+  limit_text: 900 PPM (Pages per minute)
+  limit: 900
+  window: minute
+  metric: PPM
+  tier: Tier 1 (Explore)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 2 (Build) RPS
+  limit_text: 10 RPS (Requests per second)
+  limit: 10
+  window: second
+  metric: RPS
+  tier: Tier 2 (Build)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 2 (Build) PPM
+  limit_text: 1,500 PPM (Pages per minute)
+  limit: 1500
+  window: minute
+  metric: PPM
+  tier: Tier 2 (Build)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 3 (Scale) RPS
+  limit_text: 15 RPS (Requests per second)
+  limit: 15
+  window: second
+  metric: RPS
+  tier: Tier 3 (Scale)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 3 (Scale) PPM
+  limit_text: 2,000 PPM (Pages per minute)
+  limit: 2000
+  window: minute
+  metric: PPM
+  tier: Tier 3 (Scale)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 4 (Enterprise) RPS
+  limit_text: 20 RPS (Requests per second)
+  limit: 20
+  window: second
+  metric: RPS
+  tier: Tier 4 (Enterprise)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Synchronous API Tier 4 (Enterprise) PPM
+  limit_text: 3,000 PPM (Pages per minute)
+  limit: 3000
+  window: minute
+  metric: PPM
+  tier: Tier 4 (Enterprise)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 0 RPS
+  limit_text: 2 RPS (Requests per second)
+  limit: 2
+  window: second
+  metric: RPS
+  tier: Tier 0
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 0 PPM
+  limit_text: 1,200 PPM (Pages per minute)
+  limit: 1200
+  window: minute
+  metric: PPM
+  tier: Tier 0
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 1 (Explore) RPS
+  limit_text: 6 RPS (Requests per second)
+  limit: 6
+  window: second
+  metric: RPS
+  tier: Tier 1 (Explore)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 1 (Explore) PPM
+  limit_text: 3,600 PPM (Pages per minute)
+  limit: 3600
+  window: minute
+  metric: PPM
+  tier: Tier 1 (Explore)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 2 (Build) RPS
+  limit_text: 20 RPS (Requests per second)
+  limit: 20
+  window: second
+  metric: RPS
+  tier: Tier 2 (Build)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 2 (Build) PPM
+  limit_text: 12,000 PPM (Pages per minute)
+  limit: 12000
+  window: minute
+  metric: PPM
+  tier: Tier 2 (Build)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 3 (Scale) RPS
+  limit_text: 30 RPS (Requests per second)
+  limit: 30
+  window: second
+  metric: RPS
+  tier: Tier 3 (Scale)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 3 (Scale) PPM
+  limit_text: 18,000 PPM (Pages per minute)
+  limit: 18000
+  window: minute
+  metric: PPM
+  tier: Tier 3 (Scale)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 4 (Enterprise) RPS
+  limit_text: 40 RPS (Requests per second)
+  limit: 40
+  window: second
+  metric: RPS
+  tier: Tier 4 (Enterprise)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Information Extract Asynchronous API Tier 4 (Enterprise) PPM
+  limit_text: 24,000 PPM (Pages per minute)
+  limit: 24000
+  window: minute
+  metric: PPM
+  tier: Tier 4 (Enterprise)
+  product: Information Extract
+  capability: Extract (Universal information extraction)
+- name: Document Classify Tier 0 RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 0
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 0 PPM
+  limit_text: 300 PPM (Pages per minute)
+  limit: 300
+  window: minute
+  metric: PPM
+  tier: Tier 0
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 1 (Explore) RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 1 (Explore)
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 1 (Explore) PPM
+  limit_text: 900 PPM (Pages per minute)
+  limit: 900
+  window: minute
+  metric: PPM
+  tier: Tier 1 (Explore)
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 2 (Build) RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 2 (Build)
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 2 (Build) PPM
+  limit_text: 1,500 PPM (Pages per minute)
+  limit: 1500
+  window: minute
+  metric: PPM
+  tier: Tier 2 (Build)
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 3 (Scale) RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 3 (Scale)
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 3 (Scale) PPM
+  limit_text: 2,000 PPM (Pages per minute)
+  limit: 2000
+  window: minute
+  metric: PPM
+  tier: Tier 3 (Scale)
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 4 (Enterprise) RPM
+  limit_text: 100 RPM (Requests per minute)
+  limit: 100
+  window: minute
+  metric: RPM
+  tier: Tier 4 (Enterprise)
+  product: Document Classify
+  capability: Classify (Document classification)
+- name: Document Classify Tier 4 (Enterprise) PPM
+  limit_text: 3,000 PPM (Pages per minute)
+  limit: 3000
+  window: minute
+  metric: PPM
+  tier: Tier 4 (Enterprise)
+  product: Document Classify
+  capability: Classify (Document classification)

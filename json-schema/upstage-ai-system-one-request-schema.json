@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/upstage-ai/main/json-schema/upstage-ai-system-one-request-schema.json",
+  "title": "SystemOneRequest",
+  "x-generated": "2026-10-12",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/upstage-ai-systemone-openapi-generated.yml#/components/schemas/SystemOneRequest",
+  "type": "object",
+  "required": [
+    "model",
+    "state",
+    "questions"
+  ],
+  "properties": {
+    "model": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "description": "The state to decide about (documented example uses a string)."
+    },
+    "questions": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/Question"
+      }
+    }
+  },
+  "$defs": {
+    "Question": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "choice",
+            "score",
+            "noul"
+          ]
+        },
+        "instructions": {
+          "type": "string"
+        },
+        "criteria": {
+          "description": "choice: object of option name to description (2 to 26 options); score: ordered array of level descriptions; omitted for noul.",
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

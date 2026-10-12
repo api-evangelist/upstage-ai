@@ -1,0 +1,31 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://console.upstage.ai/docs/guides/mcp-server
+- https://github.com/UpstageAI/mcp-upstage
+status: published
+server:
+  name: mcp-upstage
+  repository: https://github.com/UpstageAI/mcp-upstage
+  package: https://pypi.org/project/mcp-upstage/
+auth:
+  type: api_key
+  note: UPSTAGE_API_KEY environment variable in the MCP client config
+tools:
+- name: parse_document
+  description: Processes documents and extracts content while preserving structure
+  parameters:
+  - file_path
+- name: extract_information
+  description: Extracts structured information from documents based on predefined or auto-generated schemas
+  parameters:
+  - file_path
+  - schema_path
+  - auto_generate_schema
+deployment:
+  mode: local-stdio
+  endpoint: null
+  install: uvx mcp-upstage
+  package: mcp-upstage
+  auth: api-key
+  verified: searched

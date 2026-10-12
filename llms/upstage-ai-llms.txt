@@ -1,0 +1,150 @@
+# Upstage Console Docs
+
+> Documentation for Upstage Console, Solar LLM, Document AI, Agents, API Reference, and partner docs.
+
+## Docs
+
+- [Delete file](/api/agents/files/delete-file.md): Remove an uploaded file so it can no longer be used as agent input. Covers the file_id path parameter, the deletion object returned (id, object, deleted), and an example request and response.
+- [List files](/api/agents/files/list-files.md): List every file uploaded to Upstage Agents. Covers the list object returned (a data array of file objects with id, bytes, filename, purpose) and an example request and response.
+- [Retrieve file](/api/agents/files/retrieve-file.md): Look up one uploaded file by file_id. Covers the path parameter, the file object returned (id, bytes, filename, purpose, created_at), and an example request and response.
+- [Upload file](/api/agents/files/upload-file.md): Upload a document for a Studio agent to process. Covers the multipart/form-data request, the file object returned (id, bytes, filename, purpose, created_at), and an example request and response.
+- [Create job](/api/agents/jobs/create-job.md): Run a Studio agent on uploaded files by creating a job. Covers the request body (agent ID, input files, config version, include), the response object (status, output, usage), and an example request and response.
+- [Retrieve job](/api/agents/jobs/retrieve-job.md): Poll a job by job_id for its status and result. Covers the include query parameter, the response object (status, output, usage), and an example request and response.
+- [Chat completions](/api/chat.md): Generate chat completions with Solar models. Covers the request parameters, the chat.completion and chat.completion.chunk response objects including tool_calls, and an example request and response.
+- [Document classification](/api/document-classification.md): Classify documents into user-defined types without templates or retraining — request parameters, examples, and response format.
+- [Embeddings](/api/embeddings.md): Get high-quality vector representations for semantic search, clustering, and multilingual classification using Upstage embeddings.
+- [Groundedness checking](/api/groundedness-checking.md): Validate LLM answers with Upstage Groundedness API—check alignment with source docs to improve accuracy and reduce hallucinations.
+- [Prebuilt extraction](/api/information-extraction/prebuilt-extraction.md): Extract fields from receipts and trade documents such as air waybills, bills of lading, and commercial invoices without writing a schema. Covers the request parameters, the response fields, and an example request and response.
+- [Universal extraction](/api/information-extraction/universal-extraction.md): Extract structured fields from any document using your own JSON schema. Covers the request body (model, messages, response_format, chunking), the chat.completion response, and example requests.
+- [Asynchronous API](/api/information-extraction/universal-extraction/async.md): Submit multiple documents to universal information extraction as an async job and retrieve the results by job ID.
+- [Schema generation](/api/information-extraction/universal-extraction/schema-generation.md): Generate an extraction schema automatically from up to three sample documents. Covers the request body (model, messages), the chat.completion response carrying the schema, and an example request and response.
+- [Document OCR API](/api/parse/document-ocr.md): Extract text from scanned documents with Upstage OCR—highly accurate for Korean and complex layouts, even at low resolution.
+- [Document parsing API](/api/parse/document-parsing.md): Parse scanned PDFs into structured HTML or Markdown with layout-aware accuracy. Ideal for unstructured business documents.
+- [Asynchronous API](/api/parse/document-parsing/async.md): Process documents with up to 2,000 pages asynchronously. Submit requests and retrieve results in batches.
+- [Responses](/api/responses.md): Generate responses with Upstage Responses API—OpenAI-compatible, with structured outputs, tool calling, reasoning items, and streaming events.
+- [Create response](/api/search/responses/create-response.md): Generate an LLM answer grounded in your vector stores with the file_search tool (RAG). Covers the request body (model, input, tools, instructions, stream), the response object (output with file_search_call and message items), non-streaming and streaming examples, and the SSE event types.
+- [Add file to vector store](/api/search/vector-stores/add-file.md): Add an uploaded file to a vector store for asynchronous indexing. Covers the request body (file_id, chunking_strategy, attributes), the vector store file object returned (status, last_error, usage_bytes), and an example request and response.
+- [Cancel file batch](/api/search/vector-stores/cancel-file-batch.md): Cancel a file batch that is still indexing; completed files are kept. Covers the path parameters, the cancelled file batch object returned, and an example request and response.
+- [Create file batch](/api/search/vector-stores/create-file-batch.md): Add up to 50 files to a vector store in one request for asynchronous indexing. Covers the request body (file_ids, chunking_strategy, attributes), the file batch object returned (status, file_counts), and an example request and response.
+- [Create vector store](/api/search/vector-stores/create-vector-store.md): Create a vector store for file search. Covers the request body (name, file_ids, expires_after, metadata), the vector store object returned (id, name, usage_bytes, file_counts, status), and an example request and response.
+- [Delete vector store](/api/search/vector-stores/delete-vector-store.md): Delete a vector store and every file and vector indexed in it. Covers the path parameter, the deletion confirmation object (id, object, deleted), and an example request and response.
+- [List files in file batch](/api/search/vector-stores/list-file-batch-files.md): List the files in a file batch. Covers the pagination and status filter parameters (limit, order, after, before, filter), the list object returned, and an example request and response.
+- [List files in vector store](/api/search/vector-stores/list-files.md): List the files in a vector store. Covers the pagination and status filter parameters (limit, order, after, before, filter), the list object returned, and an example request and response.
+- [List vector stores](/api/search/vector-stores/list-vector-stores.md): List your vector stores. Covers the pagination parameters (limit, order, after, before), the list object returned (data, first_id, last_id, has_more), and an example request and response.
+- [Modify vector store](/api/search/vector-stores/modify-vector-store.md): Update a vector store's name, expiration policy, or metadata. Covers the request body, the updated vector store object returned, and an example request and response.
+- [Remove file from vector store](/api/search/vector-stores/remove-file.md): Remove a file and its vectors from a vector store. Covers the path parameters, the deletion confirmation object (id, object, deleted), and an example request and response.
+- [Retrieve file batch](/api/search/vector-stores/retrieve-file-batch.md): Check a file batch by batch ID to see how indexing is progressing. Covers the path parameters, the file batch object returned (status, file_counts), and an example request and response.
+- [Retrieve file in vector store](/api/search/vector-stores/retrieve-file.md): Check one file in a vector store by vector store ID and file ID. Covers the path parameters, the vector store file object returned (status, last_error, usage_bytes, attributes), and an example request and response.
+- [Retrieve vector store](/api/search/vector-stores/retrieve-vector-store.md): Fetch one vector store by ID. Covers the path parameter, the vector store object returned (name, usage_bytes, file_counts, status, expires_after, metadata), and an example request and response.
+- [Search vector store](/api/search/vector-stores/search-vector-store.md): Run a natural-language query against a vector store. Covers the request body (query, max_num_results, filters), the search results page object (data with file_id, filename, score, content; has_more, next_page), example request and response, and a note on multi-query requests.
+- [System One](/api/systemone.md): Send a state and typed questions to Solar Decide and get back a choice, a score, or a yes/no answer, each with the probabilities the model assigned. Covers the request parameters, the answer objects, and an example request and response.
+- [Translation](/api/translation.md): Solar supports multiple models for below tasks
+- [Agents API](/docs/agents.md): Automate document workflows by running Studio agents through the Upstage Agents API — upload files, create jobs, and fetch results.
+- [Files](/docs/agents/files.md): Upload, list, retrieve, and delete the files that Upstage Agents process, with a request and response example for each Files API operation.
+- [Jobs](/docs/agents/jobs.md): Run Studio agents on uploaded files, control how much step history is returned with the include parameter, and read job results from output_text and additional_values.
+- [Document Classification](/docs/capabilities/classify/document-classification.md): Classify scans, photos, and digital PDFs into your own user-defined categories with Upstage Document Classification — no templates and no fine-tuning required.
+- [Document split](/docs/capabilities/classify/document-split.md): Learn how to split and classify multiple documents contained within a single file.
+- [Document chat](/docs/capabilities/document-chat.md): Provides answers to questions using the given documents. Each answer includes accurate citations from the sources.
+- [Embed](/docs/capabilities/embed.md): Convert text into Solar Embedding vectors for search, classification, and clustering, using separate passage and query models and batches of up to 100 texts.
+- [Extract](/docs/capabilities/extract.md): Learn what information extraction is and choose between Upstage's universal and prebuilt approaches to turn unstructured documents into structured key-value data.
+- [Confidence](/docs/capabilities/extract/confidence.md): Learn how to obtain confidence for extracted information to assess reliability and implement Human-in-the-Loop workflows.
+- [Document split](/docs/capabilities/extract/document-split.md): Learn how to extract information from multiple documents contained within a single file.
+- [Location coordinates](/docs/capabilities/extract/location-coordinates.md): Return the page coordinates of each extracted field with the location and location_granularity options, then parse and visualize them on the source document.
+- [Prebuilt extraction](/docs/capabilities/extract/prebuilt-extraction.md): Prebuilt information extraction, deprecated on May 6, 2026, offered fine-tuned models for receipts and logistics documents such as air waybills and bills of lading.
+- [Asynchronous API](/docs/capabilities/extract/universal-extraction-async.md): Submit many documents to universal information extraction as one asynchronous job and collect the results by job ID.
+- [Universal extraction](/docs/capabilities/extract/universal-extraction.md): No templates. No retraining. Upstage Universal IE API extracts structured data from any document type—instantly and accurately.
+- [Writing a schema](/docs/capabilities/extract/writing-a-schema.md): Two ways to get a schema for universal information extraction — automatic generation from a sample document, or manual design.
+- [Overview](/docs/capabilities/generate.md): Overview of building with Solar on Upstage — make your first API call, choose a model, add reasoning, structured outputs, and tool calling, then ship to production.
+- [API Quickstart](/docs/capabilities/generate/chat.md): Make your first Solar API call with Upstage. Choose a model alias, send single-turn and multi-turn requests, and get a response in minutes.
+- [FAQ](/docs/capabilities/generate/faq.md): Frequently asked questions about generating text with Solar — model behavior, requests and responses, and common troubleshooting.
+- [Reasoning](/docs/capabilities/generate/reasoning.md): When to let Solar reason before answering, and how reasoning_effort trades extra tokens and latency for multi-step accuracy.
+- [Structured outputs](/docs/capabilities/generate/structured-outputs.md): Constrain a model response to your own JSON Schema so every reply comes back with the same fields, types, and enum values.
+- [Tool calling](/docs/capabilities/generate/tool-calling.md): Trigger external tools from AI responses. Upstage enables real-time, grounded calls for agents, tools, and automation flows.
+- [Document parsing](/docs/capabilities/parse.md): Parse scanned documents with Upstage’s AI—fast OCR and parsing with support for layout-aware extraction and multilingual text.
+- [API Quickstart](/docs/capabilities/parse/api-quickstart.md): Make your first Document Parse call — send a PDF or image and get structured HTML or Markdown back in minutes.
+- [Chart Recognition](/docs/capabilities/parse/chart-recognition.md): How Document Parse recognizes charts inside documents and represents them in the structured HTML and Markdown output.
+- [Document OCR](/docs/capabilities/parse/document-ocr.md): Extract text from scanned forms and images with high OCR accuracy. Upstage OCR supports Hangul, Hanja, and low-quality scans.
+- [Document parsing](/docs/capabilities/parse/document-parsing.md): Parse complex documents into structured HTML or Markdown. Upstage API handles layout variations and large, unstructured files with ease.
+- [Handling large documents](/docs/capabilities/parse/handling-large-documents.md): Parse files with hundreds or thousands of pages — chunked synchronous requests and the asynchronous API.
+- [Input requirements](/docs/capabilities/parse/input-requirements.md): Supported file formats, page and size limits, and other input requirements for Document Parse requests.
+- [Merge multipage table](/docs/capabilities/parse/merge-multipage-table.md): Reconstruct tables that span multiple pages into a single table in Document Parse output.
+- [Tips & FAQ](/docs/capabilities/parse/tips-faq.md): Practical tips for Document Parse — splitting large PDFs, request parameters, and answers to common questions.
+- [Understanding output](/docs/capabilities/parse/understanding-output.md): How to read Document Parse output — element categories, coordinates, and the HTML and Markdown representations it returns.
+- [File Search](/docs/capabilities/search/file-search.md): Upload files, build a vector store, and retrieve relevant information — or get AI-generated answers grounded in your documents using the Responses API.
+- [Deployment Options](/docs/deployment-options.md): Explore deployment options to access Upstage AI capabilities through AWS, Azure, and Snowflake marketplaces.
+- [AI Agent Tools](/docs/deployment-options/aws/document-intelligence-ai-agent.md): Subscribe to the Upstage Document Intelligence AI Agent on AWS Marketplace — Document Parse and Information Extract in one serverless agent — with account setup steps and pricing.
+- [Sagemaker ML Products](/docs/deployment-options/aws/sagemaker-ml-products.md): Deploy Solar Pro 2, Solar Mini, Document Parse, Document OCR, Information Extract, and Embedding as SageMaker endpoints in your own AWS account, with real-time and batch transform examples.
+- [Managed Applications](/docs/deployment-options/azure/managed-applications.md): Deploy Upstage Information Extract, Document Parse, and Studio on Azure using managed applications for secure, private deployment in your virtual network.
+- [Snowflake Native App](/docs/deployment-options/snowflake/native-app.md): Run Upstage Document Parse inside your Snowflake account as a serverless Native App — prerequisites, installation, usage from a stage or base64, and cost management tips.
+- [Getting started](/docs/getting-started.md): Step-by-step setup guide for Upstage Console. Start building with high-performance AI APIs in minutes—no complex infra needed.
+- [Counting tokens](/docs/guides/counting-tokens.md): Estimate token usage before calling the API. Upstage helps developers optimize cost and prompt design with clear token counts.
+- [MCP server](/docs/guides/mcp-server.md): Connect Claude and other MCP clients to Upstage document APIs — prerequisites, installation, and configuration.
+- [Rate limits](/docs/guides/rate-limits.md): Rate limit policy by capability and tier (RPS, RPM, TPM, PPM), what a 429 response means, and best practices for staying under the limits.
+- [Regional endpoints](/docs/guides/region-usage.md): Process data inside Korea with the kr.api.upstage.ai endpoint — supported models, how to switch, and how it differs from the global region.
+- [Claude Code](/docs/integrations/claude-code.md): Run Anthropic's Claude Code CLI on Upstage Solar models with one command.
+- [Codex](/docs/integrations/codex.md): Run OpenAI's Codex CLI on Upstage Solar models with one command.
+- [Hermes Agent](/docs/integrations/hermes-agent.md): Run the Hermes Agent on Upstage Solar models with a single setup command.
+- [Models](/docs/models.md): Explore Upstage’s diverse catalog of AI models for text generation, document processing, embeddings, information extraction, and more. Quickly compare and select the right model for your business needs.
+- [Document Classify](/docs/models/document-classify.md): Semantic classification into user-defined classes — model specs, pricing, and version history.
+- [Document OCR](/docs/models/document-ocr.md): Recognize text from tilted, low-quality, or multilingual files — model specs, pricing, and version history.
+- [Document Parse](/docs/models/document-parse.md): Make your documents AI-readable — model specs, pricing, and version history.
+- [All models](/docs/models/history.md): Full catalog of Upstage models with every released version, including deprecated snapshots — context length, availability, and platform support for Solar LLM and document models.
+- [Information Extract](/docs/models/information-extract.md): Extract structured key data from unstructured text — model specs, pricing, and version history.
+- [Prebuilt Information Extraction](/docs/models/prebuilt-information-extraction.md): Extract predefined key fields from specific document types — model specs, pricing, and version history.
+- [Solar Decide](/docs/models/solar-decide.md): Upstage's structured decision model on Solar Mini 4 — model specs, pricing, and version history.
+- [Solar Mini 4](/docs/models/solar-mini-4.md): Upstage's cost-efficient compact model for agentic use — model specs, pricing, and version history.
+- [Solar Mini](/docs/models/solar-mini.md): Will be fully deprecated on October 30, 2026 (KST). Migrate to Solar Mini 4. A lightweight model providing high-quality language processing — model specs, pricing, and version history.
+- [Solar Pro 2](/docs/models/solar-pro-2.md): Will be fully deprecated on October 30, 2026 (KST). Migrate to Solar Pro 4. Advanced reasoning, tool use, and multilingual support — model specs, pricing, and version history.
+- [Solar Pro 3](/docs/models/solar-pro-3.md): Will be fully deprecated on October 30, 2026 (KST). Migrate to Solar Pro 4. Powerful MoE model with 102B parameters — model specs, pricing, and version history.
+- [Solar Pro 4](/docs/models/solar-pro-4.md): Upstage flagship model, specialized for agentic use — model specs, pricing, and version history.
+- [Groundedness checking](/docs/others/groundedness-checking.md): Reduce hallucinations with Upstage’s groundedness check. Validate LLM output against sources and deliver trustworthy answers.
+- [Translation](/docs/others/translation.md): Translate across Korean, English, and Japanese with fluent, context-aware results. Ideal for global enterprise content and workflows.
+- [Changelog](/docs/resources/changelog.md): Month-by-month record of changes, improvements, and new features in Upstage Console.
+- [Error codes](/docs/resources/error-codes.md): Every error code the API returns, what causes it, and the recommended steps to resolve it.
+- [FAQ](/docs/resources/faq.md): Answers to common questions about getting started, API usage, organizations, billing, security, and platform infrastructure.
+- [Studio](/docs/studio.md): Build, run, and improve no-code document agents in Upstage Studio.
+- [Create an agent](/docs/studio/create.md): Three ways to start an agent, and a tour of the Studio workspace and agent builder.
+- [Versions and deployment](/docs/studio/deployment.md): Manage config versions, roll out to production safely, and automate with the Agents API.
+- [Run and review](/docs/studio/feedback-loop.md): Run agents, read the results, build ground truth, and let Quick Tune improve your schemas.
+- [Nodes](/docs/studio/key-features.md): Configure the Parse, Classify, Extract, and Instruct nodes that make up a Studio agent.
+- [Monitoring](/docs/studio/monitoring.md): Track throughput, latency, and stability, and drill into individual jobs to find the cause.
+- [Sharing and the Library](/docs/studio/sharing.md): Share agents by link, publish to the Library, and export or import agent configurations.
+- [Troubleshooting & FAQ](/docs/studio/troubleshooting.md): Fixes for the most common Studio problems, frequently asked questions, and a glossary.
+- [Use cases](/docs/studio/use-cases.md): Five worked examples showing how to assemble Studio nodes for real document workflows — resume screening, expense processing, split scan bundles, quote comparison, and contract review.
+- [Privacy Policy (2023-12-20)](/docs/terms/privacy-policy-2023-12-20.md): /docs/terms/privacy-policy-2023-12-20
+- [Privacy Policy (2024-02-28)](/docs/terms/privacy-policy-2024-02-28.md): /docs/terms/privacy-policy-2024-02-28
+- [Privacy Policy (2024-03-13)](/docs/terms/privacy-policy-2024-03-13.md): /docs/terms/privacy-policy-2024-03-13
+- [Privacy Policy (2024-07-12)](/docs/terms/privacy-policy-2024-07-12.md): /docs/terms/privacy-policy-2024-07-12
+- [Privacy Policy (2024-08-01)](/docs/terms/privacy-policy-2024-08-01.md): /docs/terms/privacy-policy-2024-08-01
+- [Privacy Policy (2024-09-24)](/docs/terms/privacy-policy-2024-09-24.md): /docs/terms/privacy-policy-2024-09-24
+- [Privacy policy](/docs/terms/privacy-policy-2024-11-30.md): /docs/terms/privacy-policy-2024-11-30
+- [Privacy policy](/docs/terms/privacy-policy-2024-12-18.md): /docs/terms/privacy-policy-2024-12-18
+- [Privacy policy](/docs/terms/privacy-policy-2025-03-07.md): /docs/terms/privacy-policy-2025-03-07
+- [Privacy policy](/docs/terms/privacy-policy-2025-05-28.md): /docs/terms/privacy-policy-2025-05-28
+- [개인정보처리방침 (한국어)](/docs/terms/privacy-policy-ko.md): /docs/terms/privacy-policy-ko
+- [개인정보처리방침 (2023-06-30)](/docs/terms/privacy-policy-kr-2023-06-30.md): /docs/terms/privacy-policy-kr-2023-06-30
+- [개인정보처리방침 (2023-11-01)](/docs/terms/privacy-policy-kr-2023-11-01.md): /docs/terms/privacy-policy-kr-2023-11-01
+- [개인정보처리방침 (2023-12-20)](/docs/terms/privacy-policy-kr-2023-12-20.md): /docs/terms/privacy-policy-kr-2023-12-20
+- [개인정보처리방침 (2024-02-28)](/docs/terms/privacy-policy-kr-2024-02-28.md): /docs/terms/privacy-policy-kr-2024-02-28
+- [개인정보처리방침 (2024-03-13)](/docs/terms/privacy-policy-kr-2024-03-13.md): /docs/terms/privacy-policy-kr-2024-03-13
+- [개인정보처리방침 (2024-07-12)](/docs/terms/privacy-policy-kr-2024-07-12.md): /docs/terms/privacy-policy-kr-2024-07-12
+- [개인정보처리방침 (2024-08-01)](/docs/terms/privacy-policy-kr-2024-08-01.md): /docs/terms/privacy-policy-kr-2024-08-01
+- [개인정보처리방침 (2024-09-24)](/docs/terms/privacy-policy-kr-2024-09-24.md): /docs/terms/privacy-policy-kr-2024-09-24
+- [개인정보처리방침 (한국어)](/docs/terms/privacy-policy-kr-2024-11-30.md): /docs/terms/privacy-policy-kr-2024-11-30
+- [개인정보처리방침 (한국어)](/docs/terms/privacy-policy-kr-2024-12-18.md): /docs/terms/privacy-policy-kr-2024-12-18
+- [개인정보처리방침 (한국어)](/docs/terms/privacy-policy-kr-2025-03-07.md): /docs/terms/privacy-policy-kr-2025-03-07
+- [개인정보처리방침 (한국어)](/docs/terms/privacy-policy-kr-2025-05-28.md): /docs/terms/privacy-policy-kr-2025-05-28
+- [Privacy policy](/docs/terms/privacy-policy.md): /docs/terms/privacy-policy
+- [서비스 수준 협약 (한국어)](/docs/terms/sla-ko.md): /docs/terms/sla-ko
+- [Service level agreement](/docs/terms/sla.md): /docs/terms/sla
+- [서비스 이용약관 (한국어)](/docs/terms/terms-of-use-ko-previous.md): /docs/terms/terms-of-use-ko-previous
+- [서비스 이용약관 (한국어)](/docs/terms/terms-of-use-ko.md): /docs/terms/terms-of-use-ko
+- [Terms of use](/docs/terms/terms-of-use-previous.md): /docs/terms/terms-of-use-previous
+- [Terms of use](/docs/terms/terms-of-use.md): /docs/terms/terms-of-use
+
+## Other languages
+
+- [한국어](/ko/docs/llms.txt)
+- [日本語](/ja/docs/llms.txt)
+- [한국어 — API Reference](/ko/api/llms.txt)
+- [日本語 — API Reference](/ja/api/llms.txt)
