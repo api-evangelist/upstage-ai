@@ -10,9 +10,11 @@ source:
 checked:
 - https://azuremarketplace.microsoft.com/
 - https://composio.dev/toolkits/upstage-ai
+- https://github.com/Portkey-AI/gateway/tree/main/src/providers
 - https://monid.ai/tools/upstage-ai
 - https://n8n.io/integrations/upstage-ai/
 - https://n8n.io/integrations/upstage/
+- https://openrouter.ai/api/v1/models
 - https://zapier.com/apps/upstage-ai/integrations
 - https://zapier.com/apps/upstage/integrations
 summary: null
@@ -35,4 +37,49 @@ edges:
   seller_name: Upstage
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: OpenRouter
+  partner: openrouter
+  partner_match: router
+  channel: partner-built
+  direction: partner-built
+  type: coverage
+  relationship: system-coverage
+  evidence: https://openrouter.ai/api/v1/models
+  coverage_role:
+  - inference-host
+  - model-maker
+  router_signals:
+    model-maker:
+      models: 3
+      router_ids:
+      - upstage
+      tools_share: 1.0
+      structured_output_share: 1.0
+    inference-host:
+      models: 3
+      router_ids:
+      - Upstage
+      tools_share: 1.0
+      structured_output_share: 1.0
+  matched_by: verified-token-table
+  detected_by: sweep-model-routing.py
+  first_seen: '2026-10-13'
+- partner_name: Portkey
+  partner: portkey
+  partner_match: router
+  channel: partner-built
+  direction: partner-built
+  type: coverage
+  relationship: system-coverage
+  evidence: https://github.com/Portkey-AI/gateway/tree/main/src/providers/upstage
+  coverage_role:
+  - provider
+  router_signals:
+    provider:
+      models: null
+      router_ids:
+      - upstage
+  matched_by: verified-token-table
+  detected_by: sweep-model-routing.py
+  first_seen: '2026-10-13'
 templates: []
