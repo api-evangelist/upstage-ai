@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/upstage-ai/integrations
 - https://zapier.com/apps/upstage/integrations
@@ -8,6 +8,7 @@ source:
 - https://composio.dev/toolkits/upstage-ai
 - https://monid.ai/tools/upstage-ai
 checked:
+- https://azuremarketplace.microsoft.com/
 - https://composio.dev/toolkits/upstage-ai
 - https://monid.ai/tools/upstage-ai
 - https://n8n.io/integrations/upstage-ai/
@@ -16,5 +17,22 @@ checked:
 - https://zapier.com/apps/upstage/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Upstage
+  listing_count: 3
+  apps:
+  - Information Extract
+  - Document Parse
+  - Upstage Studio
+  seller_name: Upstage
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
 templates: []
