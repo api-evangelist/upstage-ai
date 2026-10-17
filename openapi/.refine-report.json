@@ -1,0 +1,19 @@
+{
+  "provider": "upstage-ai",
+  "sources": [
+    "_ae-authored/upstage-ai-systemone-openapi-generated.yml"
+  ],
+  "outputs": [
+    "upstage-ai-system-one-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "upstage-ai-systemone-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "upstage-ai-systemone-openapi-generated.yml: declared missing tag: System One",
+    "apis.yml register: written (+1 apis, 12 total)"
+  ],
+  "skipped": []
+}
