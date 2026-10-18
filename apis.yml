@@ -24,6 +24,14 @@ modified: '2026-10-12'
 
 tags:
 - Artificial Intelligence
+- LLM
+- Document AI
+- OCR
+- Decision Support
+- Structured Outputs
+- Embeddings
+tags_raw:
+- Artificial Intelligence
 - Large Language Models
 - Document AI
 - OCR
@@ -242,6 +250,8 @@ apis:
   humanURL: https://console.upstage.ai/api/systemone
   baseURL: https://api.upstage.ai/v1
   tags:
+  - Systemone
+  tags_raw:
   - System One
   properties:
   - type: OpenAPI
