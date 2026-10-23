@@ -19,6 +19,7 @@ checked:
 - https://openrouter.ai/api/v1/models
 - https://zapier.com/apps/upstage-ai/integrations
 - https://zapier.com/apps/upstage/integrations
+- hugging-face/integrations/hugging-face-integration-edges.yml
 summary: null
 marketplace_apps: []
 edges:
@@ -125,4 +126,39 @@ edges:
   matched_by: verified-token-table
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/upstage
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - upstage/dp-bench
+  - upstage/CReSt
+  - upstage/Pretraining_Dataset
+  - upstage/TFLOP-dataset
+  - upstage/wmlu-arenahard-2-0
+  - upstage/wmlu-koarenahard-0-1
+  - upstage/SOLAR-10.7B-Instruct-v1.0
+  - upstage/SOLAR-0-70b-16bit
+  - upstage/Solar-Open-100B
+  - upstage/SOLAR-10.7B-v1.0
+  - upstage/Solar-Open2-250B
+  - upstage/solar-pro-preview-instruct
+  - upstage/TinySolar-248m-4k
+  - upstage/llama-30b-instruct-2048
+  - upstage/open-ko-llm-leaderboard
+  - upstage/ko-freshqa-leaderboard
+  - upstage/evalverse-space
+  listing_count: 3
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub datasets
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
 templates: []

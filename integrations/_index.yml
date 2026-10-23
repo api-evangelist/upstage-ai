@@ -15,6 +15,28 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: upstage-ai-llamaindex
+  label: LlamaIndex
+  partner: llamaindex
+  partner_name: LlamaIndex
+  type: coverage
+  channel: partner-built
+  evidence: https://github.com/run-llama/llama_index/tree/main/llama-index-integrations/readers/llama-index-readers-upstage
+  source: edge
+  relationship: system-coverage
+  status: not-a-workflow
+  arazzo: null
+- slug: upstage-ai-langchain
+  label: LangChain
+  partner: langchain
+  partner_name: LangChain
+  type: coverage
+  channel: partner-built
+  evidence: https://github.com/langchain-ai/langchain-upstage
+  source: edge
+  relationship: system-coverage
+  status: not-a-workflow
+  arazzo: null
 - slug: upstage-ai-openrouter
   label: OpenRouter
   partner: openrouter
@@ -37,25 +59,16 @@
   relationship: system-coverage
   status: not-a-workflow
   arazzo: null
-- slug: upstage-ai-llamaindex
-  label: LlamaIndex
-  partner: llamaindex
-  partner_name: LlamaIndex
-  type: coverage
+- slug: upstage-ai-hugging-face-hugging-face-hub
+  label: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_name: Hugging Face (hugging-face-hub)
+  category: Hugging Face Hub datasets
+  type: marketplace
+  marketplace: hugging-face-hub
   channel: partner-built
-  evidence: https://github.com/run-llama/llama_index/tree/main/llama-index-integrations/readers/llama-index-readers-upstage
+  evidence: https://huggingface.co/upstage
   source: edge
-  relationship: system-coverage
-  status: not-a-workflow
-  arazzo: null
-- slug: upstage-ai-langchain
-  label: LangChain
-  partner: langchain
-  partner_name: LangChain
-  type: coverage
-  channel: partner-built
-  evidence: https://github.com/langchain-ai/langchain-upstage
-  source: edge
-  relationship: system-coverage
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null
